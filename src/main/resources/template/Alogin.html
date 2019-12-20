@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+<h1>欢迎登录权限demo</h1>
+<hr>
+<div id="loginView">
+    <el-row>
+        <el-form :inline="true" :model="loginForm" size="small" class="demo-form-inline order-form">
+            <el-row>
+                <el-form-item label="账号">
+                    <el-input v-model="loginForm.userId" placeholder="请输入账号" style="width: 220px;"></el-input>
+                </el-form-item>
+                <el-form-item label="密码">
+                    <el-input v-model="loginForm.password" placeholder="请输入密码"></el-input>
+                </el-form-item>
+            </el-row>
+            <el-button icon="login" @click="login()">登录</el-button>
+        </el-form>
+    </el-row>
+</div>
+<!--<script type=”text/javascript” src="../jquery.min.js"></script>-->
+<!--<script type=”text/javascript” src="../vue.js"></script>-->
+<!--<script type=”text/javascript” src="../axios.min.js"></script>-->
+<!--<script type=”text/javascript” src="../index.js"></script>-->
+<!--<script type=”text/javascript” src="../login.js"></script>-->
+
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="../login.js"></script>
+
+</body>
+</html>
