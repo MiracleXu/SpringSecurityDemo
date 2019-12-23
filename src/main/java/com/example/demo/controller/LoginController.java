@@ -22,4 +22,9 @@ public class LoginController {
     public String index() {
         return loginService.index();
     }
+
+    @RequestMapping("/hello")
+    public String hello() {
+        return "hello test";
+    }
 }
